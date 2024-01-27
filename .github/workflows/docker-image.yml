@@ -13,7 +13,7 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build . --file Dockerfile --tag orangehrm/orangehrm:5.5
+          docker build . --file Dockerfile --tag orangehrm/orangehrm:5.6
           docker build . --file Dockerfile --tag orangehrm/orangehrm:latest
 
       - name: Login to Docker Hub
@@ -24,5 +24,5 @@ jobs:
 
       - name: Push the Docker image
         run: |
-          docker push orangehrm/orangehrm:5.5
+          docker push orangehrm/orangehrm:5.6
           docker push orangehrm/orangehrm:latest
